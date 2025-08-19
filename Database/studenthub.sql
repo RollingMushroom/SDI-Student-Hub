@@ -126,7 +126,7 @@ CREATE TABLE `student_course`  (
   `progress` varchar(3) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   PRIMARY KEY (`id`) USING BTREE,
   UNIQUE INDEX `unique_student_course`(`studentid` ASC, `course_id` ASC) USING BTREE,
-  INDEX `course_id`(`course_id` ASC) USING BTREE,
+  INDEX `course_id`(`course_id` ASC) USING BTREE,S
   CONSTRAINT `student_course_ibfk_1` FOREIGN KEY (`studentid`) REFERENCES `student` (`studentid`) ON DELETE CASCADE ON UPDATE RESTRICT,
   CONSTRAINT `student_course_ibfk_2` FOREIGN KEY (`course_id`) REFERENCES `course` (`id`) ON DELETE CASCADE ON UPDATE RESTRICT
 ) ENGINE = InnoDB CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;

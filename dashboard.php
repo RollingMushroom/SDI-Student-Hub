@@ -72,28 +72,46 @@ $conn->close();
     <link href="css/style.css" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
-<?php include 'includes/header.html';?>
 
-<div id="profile">
-    <div class="wrapper20">
-        <div class="userInfo">
-            <div class="userImg">
-                <img src="images/user/<?php echo htmlspecialchars($studentid ?? 'default'); ?>.jpg" rel="user">
-            </div>
-            <div class="userTxt">
-                <span class="fullname"><?php echo htmlspecialchars($fullname ?? 'Student Name'); ?></span>
-                <i class="fa fa-chevron-right"></i><br>
-                <span class="username"><?php echo htmlspecialchars($studentid_display ?? '@studentid'); ?></span>
+<body>
+<div id="wrapper" class="container">
+    <div id="top">
+        <div id="topBar">
+            <div class="wrapper20">
+                <a class="logo" href="index.html">
+                    <img src="images/logo.png" rel="logo">
+                </a>
+                <div class="topNav clearfix">
+                    <ul class="tNav clearfix">
+                        <li>
+                            <a href="logout.php">
+                                <i class="fa fa-sign-out icon-white"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /topNav -->
             </div>
         </div>
-        <!-- /userInfo -->
-
-        <i class="fa fa-bars icon-nav-mobile"></i>
+        <!-- /topBar -->
+        <div id="profile">
+            <div class="wrapper20">
+                <div class="userInfo">
+                    <div class="userImg">
+                        <img src="images/user/<?php echo htmlspecialchars($studentid ?? 'default'); ?>.jpg" rel="user">
+                    </div>
+                    <div class="userTxt">
+                        <span class="fullname"><?php echo htmlspecialchars($fullname ?? 'Student Name'); ?></span>
+                        <i class="fa fa-chevron-right"></i><br>
+                        <span class="username"><?php echo htmlspecialchars($studentid_display ?? '@studentid'); ?></span>
+                    </div>
+                </div>
+                <!-- /userInfo -->
+            </div>
+        </div>
+        <!-- /profile -->
     </div>
-</div>
-<!-- /profile -->
-</div>
-<!-- /top -->
+    <!-- /top -->
 
 <div id="sidebar">
     <ul class="mainNav">

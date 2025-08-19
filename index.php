@@ -52,8 +52,6 @@ $stmt_courses->close();
 		<link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-ipad.png"/>
 		<link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon-iphone.png"/>
 		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
-	
-
 
 		<!-- bootstrap -->
 		<link href="css/bootstrap/bootstrap.css" rel="stylesheet"/>
