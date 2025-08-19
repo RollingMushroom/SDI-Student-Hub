@@ -55,7 +55,6 @@ $stmt_courses->close();
     <title>UniKL Hub - My Course</title>
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap/bootstrap.css" rel="stylesheet"/>
     <link rel="stylesheet" href="css/font-awesome-4.0.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/jquery-ui.css"/>
     <link href="css/style.css" rel="stylesheet" type="text/css"/>
@@ -128,32 +127,7 @@ $stmt_courses->close();
 </div>
 <!-- /top -->
 
-<div id="sidebar">
-    <ul class="mainNav">
-        <li>
-            <a href="dashboard.php">
-                <i class="fa fa-home"></i><br>Dashboard</a>
-        </li>
-        <li>
-            <a href="profile.php">
-                <i class="fa fa-user"></i><br>My Profile</a>
-        </li>
-        <li class="active">
-            <a href="#">
-                <i class="fa fa-book"></i><br>My Course</a>
-        </li>
-        <li>
-            <a href="Meeting.php">
-                <i class="fa fa-calendar"></i><br>Timetable</a>
-            <span class="badge badge-mNav">4</span>
-        </li>
-        <li>
-            <a href="ghocs.php">
-                <i class="fa fa-trophy"></i><br>GHOCs</a>
-        </li>
-    </ul>
-</div>
-<!-- /sidebar -->
+<?php include 'includes/sidebar.php'; ?>
 
 <div id="main" class="clearfix">
     <div class="secInfo">

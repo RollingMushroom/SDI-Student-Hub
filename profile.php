@@ -24,14 +24,6 @@ $stmt->close();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UniKL Hub - My Profile</title>
 
-    <link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-ipad-retina.png"/>
-    <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-iphone-retina.png"/>
-    <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-ipad.png"/>
-    <link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon-iphone.png"/>
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
-
-    <!-- bootstrap -->
-    <link href="css/bootstrap/bootstrap.css" rel="stylesheet"/>
 
     <link rel="stylesheet" href="css/font-awesome-4.0.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/jquery-ui.css"/>
@@ -42,28 +34,8 @@ $stmt->close();
     <!-- additional css -->
 
 </head>
-<body>
-<div id="wrapper" class="container">
-    <div id="top">
-        <div id="topBar">
-            <div class="wrapper20">
-                <a class="logo" href="index.html">
-                    <img src="images/logo.png" rel="logo">
-                </a>
-                <div class="topNav clearfix">
-                    <ul class="tNav clearfix">
-                        <li>
-                            <a href="logout.php">
-                                <i class="fa fa-sign-out icon-white"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- /topNav -->
-            </div>
-        </div>
-        <!-- /topBar -->
-        <div id="profile">
+<?php include 'includes/header.html'; ?>
+				<div id="profile">
 					<div class="wrapper20">
 						<div class="userInfo">
 							<div class="userImg">
